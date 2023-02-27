@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="demo">
+
+    <!--
+    see examples at http://testng.org/doc/documentation-main.html#testng-xml
+
+    <suite-files>
+        <suite-file path="./junit-suite.xml" />
+    </suite-files>
+
+    <test name="TimeOut">
+        <classes>
+            <class name="test.timeout.TimeOutTest" />
+            <class name="test.timeout.TimeOutFromXmlTest"/>
+            <class name="test.timeout.TimeOutThreadLocalSampleTest"/>
+        </classes>
+    </test>
+    -->
+    
+<!--    <test name="test package">
+        <packages>
+            <package name="test"/>
+        </packages>
+    </test>
+    
+    <test name="test classes">
+        <classes>
+            <class name="test.DemoTestCase"/>
+        </classes>
+    </test>-->
+    
+    <test name="test method">
+        <classes>
+            <class name="test.DemoTestCase">
+                <methods>
+                    <include name="testGetPowerForIntGivenWrongtArgumentThrowsExpection"/>
+                </methods>
+            </class>
+            <class name="test.DemoSoftAssert"/>
+        </classes>
+    </test>
+
+</suite>

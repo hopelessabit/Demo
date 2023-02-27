@@ -34,8 +34,9 @@ public class Demo {
             } else if (b == 1) {
                 product = a;
             } else {
+                product *= a;
                 for (int i = 2; i <= b; i++) {
-                    product = product * i;
+                    product *= a;
                 }
             }
         }
